@@ -55,13 +55,14 @@
 }
 
 .clients-list__icon{
+    height: 100%;
     fill: $--social-icon-color;
 
     @include transition (fill);
 
     .clients-list__link:hover &,
     .clients-list__link:focus &{
-        fill: var(--hover-color);
+        fill: $--hover-color;
     }
 }
 

@@ -14,26 +14,20 @@
 //   components
 
 // page-header
-
 @import './components/page-header';
 @import './components/logo';
 @import './components/contacts-list';
 
-
 // hero
-
 @import './components/section-hero';
 
 // peculiarities
-
 @import './components/peculiarities';
 
 // doing
-
 @import './components/doing';
 
 // our-team
-
 @import './components/our-team';
 
 // clients
@@ -43,3 +37,6 @@
 // modal
 @import './components/modal';
 
+// PORTFOLIO
+@import './components/portfolio/filters';
+@import './components/portfolio/services';

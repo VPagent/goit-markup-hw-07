@@ -16,9 +16,6 @@
 
     @include flex (flex);
     text-align: center;
-    // display: flex;
-    // text-align: center;
-    // align-content: center;
     margin-top: 50px;
 
     .team-cards__item{
@@ -60,8 +57,6 @@
     }
 }
 
-
-
 .team-links{
     
     @include flex (flex);
@@ -72,10 +67,8 @@
     .team-links__item:not(:first-child){
         margin-left: 10px;
     }
-    .team-links__item{
-        border-radius: 50%;
-    }
 }
+
 .team-links__link{
     display: flex;
     width: 44px;
@@ -85,26 +78,22 @@
 }
 
 .team-links__icon{
-
+    border-radius: 50%;
     fill: $--social-icon-color;
 
-    @include transition (fill);
-    @include transition (background-color);
-
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
     &:hover,
     &:focus{
         background-color: $--hover-color;
         fill: #ffffff;
-
-        @include transition (background-color);
-        @include transition (fill);
     }
     
     .team-links__link:hover &,
     .team-links__link:focus &{
         fill: #ffffff;
+        background-color: $--hover-color;
+        fill: #ffffff;
     }
 }
-.team-links__link{
-    border-radius: 50%;
-}
+
